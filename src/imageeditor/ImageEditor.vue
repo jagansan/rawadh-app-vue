@@ -77,7 +77,7 @@
             ...markup_editor_locale_en_gb,
           },
         },
-        src: "image.jpeg",
+        src: "camera-img.png",
         result: undefined,
       };
     },
