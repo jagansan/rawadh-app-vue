@@ -9,7 +9,7 @@ const valid = ref(false);
 const show1 = ref(false);
 //const logform = ref();
 const password = ref('admin123');
-const username = ref('info@codedthemes.com');
+const username = ref('info@entglow.com');
 const passwordRules = ref([
   (v: string) => !!v || 'Password is required',
   (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
@@ -24,7 +24,7 @@ function validate(values: any, { setErrors }: any) {
 </script>
 
 <template>
-  <v-btn block color="primary" variant="outlined" class="text-lightText googleBtn">
+  <!-- <v-btn block color="primary" variant="outlined" class="text-lightText googleBtn">
     <img :src="Google" alt="google" />
     <span class="ml-2">Sign in with Google</span></v-btn
   >
@@ -35,7 +35,7 @@ function validate(values: any, { setErrors }: any) {
       <v-divider class="custom-devider" />
     </v-col>
   </v-row>
-  <h5 class="text-h5 text-center my-4 mb-8">Sign in with Email address</h5>
+  <h5 class="text-h5 text-center my-4 mb-8">Sign in with Email address</h5> -->
   <Form @submit="validate" class="mt-7 loginForm" v-slot="{ errors, isSubmitting }">
     <v-text-field
       v-model="username"
@@ -84,10 +84,10 @@ function validate(values: any, { setErrors }: any) {
       <v-alert color="error">{{ errors.apiError }}</v-alert>
     </div>
   </Form>
-  <div class="mt-5 text-right">
+  <!-- <div class="mt-5 text-right">
     <v-divider />
     <v-btn variant="plain" to="/auth/register" class="mt-2 text-capitalize mr-n2">Don't Have an account?</v-btn>
-  </div>
+  </div> -->
 </template>
 <style lang="scss">
 .custom-devider {

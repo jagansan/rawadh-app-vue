@@ -5,12 +5,27 @@ const PurpleTheme: ThemeTypes = {
   dark: false,
   variables: {
     'border-color': '#1e88e5',
-    'carousel-control-size': 10
+    'carousel-control-size': 10,
+    'border-opacity': 0.12,
+    'high-emphasis-opacity': 0.87,
+    'medium-emphasis-opacity': 0.60,
+    'disabled-opacity': 0.38,
+    'idle-opacity': 0.04,
+    'hover-opacity': 0.04,
+    'focus-opacity': 0.12,
+    'selected-opacity': 0.08,
+    'activated-opacity': 0.12,
+    'pressed-opacity': 0.12,
+    'dragged-opacity': 0.08,
+    'theme-kbd': '#212529',
+    'theme-on-kbd': '#000',
+    'theme-code': '#F5F5F5',
+    'theme-on-code': '#000000',
   },
   colors: {
     primary: '#1e88e5',
-    secondary: '#5e35b1',
-    info: '#03c9d7',
+    secondary: '#09469a',
+    info: '#00b9f2',
     success: '#00c853',
     accent: '#FFAB91',
     warning: '#ffc107',
@@ -34,8 +49,8 @@ const PurpleTheme: ThemeTypes = {
     linkedin: '#0e76a8',
     gray100: '#fafafa',
     primary200: '#90caf9',
-    secondary200: '#b39ddb'
-  }
+    secondary200: '#b39ddb',
+  },
 };
 
 export { PurpleTheme };

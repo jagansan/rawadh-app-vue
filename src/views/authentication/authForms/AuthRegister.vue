@@ -20,7 +20,7 @@ function validate() {
 </script>
 
 <template>
-  <v-btn block color="primary" variant="outlined" class="text-lightText googleBtn">
+  <!-- <v-btn block color="primary" variant="outlined" class="text-lightText googleBtn">
     <img :src="Google" alt="google" />
     <span class="ml-2">Sign up with Google</span></v-btn
   >
@@ -31,7 +31,7 @@ function validate() {
       <v-divider class="custom-devider" />
     </v-col>
   </v-row>
-  <h5 class="text-h5 text-center my-4 mb-8">Sign up with Email address</h5>
+  <h5 class="text-h5 text-center my-4 mb-8">Sign up with Email address</h5> -->
   <v-form ref="Regform" lazy-validation action="/dashboards/analytical" class="mt-7 loginForm">
     <v-row>
       <v-col cols="12" sm="6">
@@ -97,7 +97,7 @@ function validate() {
   </v-form>
   <div class="mt-5 text-right">
     <v-divider />
-    <v-btn variant="plain" to="/auth/login" class="mt-2 text-capitalize mr-n2">Already have an account?</v-btn>
+    <v-btn variant="plain" to="/" class="mt-2 text-capitalize mr-n2">Already have an account?</v-btn>
   </div>
 </template>
 <style lang="scss">
