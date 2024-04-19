@@ -97,3 +97,7 @@ span.col__info {float: right;}
 .user_type {background-color: var(--success);color: var(--main-white);padding: 6px 12px;border-radius: 15px;}
 .admin_type {background-color: var(--danger);color: var(--main-white);padding: 6px 12px;border-radius: 15px;}
 .deactive_element {background-color: var(--danger);color: var(--main-white);padding: 6px 12px;border-radius: 15px;}
+
+/* 19-4-2024 */
+
+.label__form {color: var(--main-black) !important;font-weight: 500;}

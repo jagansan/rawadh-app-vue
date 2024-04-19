@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { SettingsIcon, LogoutIcon, UserIcon, UserCircleIcon } from 'vue-tabler-icons';
+import { LogoutIcon, UserIcon, UserCircleIcon } from 'vue-tabler-icons';
 import { useAuthStore } from '@/stores/auth';
 
 const swt1 = ref(true);
@@ -51,6 +51,15 @@ const authStore = useAuthStore();
           </template>
           <v-list-item-title class="text-subtitle-2">
             <RouterLink to="/userlist">Manage User</RouterLink> 
+          </v-list-item-title>
+        </v-list-item>
+
+        <v-list-item color="secondary" rounded="md">
+          <template v-slot:prepend>
+            <IconDeviceCctv size="20" class="mr-2" />
+          </template>
+          <v-list-item-title class="text-subtitle-2">
+            <RouterLink to="/userlist">Camera</RouterLink> 
           </v-list-item-title>
         </v-list-item>
 
