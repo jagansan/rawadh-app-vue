@@ -21,7 +21,7 @@
                     <v-select v-model="value2" :items="items2" label="User Type" chips multiple variant="outlined"></v-select>
                 </v-col>
                 <v-col cols="12" md="6">
-                    <v-select v-model="value3" :items="items3" label="Active" chips multiple variant="outlined"></v-select>
+                    <v-select v-model="value3" :items="items3" label="Status" chips multiple variant="outlined"></v-select>
                 </v-col>
                 <v-col cols="12" md="12">
                     <div class="action___bttn__form">

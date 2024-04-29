@@ -13,6 +13,9 @@ span {font-family: "Montserrat", sans-serif !important;}
 ul {padding: 0;margin: 0;}
 ul li {font-family: "Montserrat", sans-serif !important;color: var(--main-gray);}
 
+.row__element {align-items: center;}
+.gap-2 {gap: 0.5rem;}
+
 /* 29-3-2024 */
 
 .scrollnavbar .v-list > .v-list-group > .v-list-item--active, .scrollnavbar .v-list > .v-list-group > .v-list-item:hover {background: var(--main-light-skyblue) !important;}
@@ -79,7 +82,6 @@ ul li {font-family: "Montserrat", sans-serif !important;color: var(--main-gray);
 /* 17-4-2024 */
 
 .bg__element {background-color: transparent;padding: 10px 15px !important;}
-.row__element {align-items: center;}
 .btn__action {text-align: right;}
 .table__element {margin-top: 30px;}
 
@@ -101,3 +103,22 @@ span.col__info {float: right;}
 /* 19-4-2024 */
 
 .label__form {color: var(--main-black) !important;font-weight: 500;}
+.tab__section {margin-top: 30px;}
+
+/* 24-4-2024 */
+
+.add__company {border: 1px solid var(--main-light-skyblue);color: var(--main-light-skyblue);transition: all 0.5s;font-size: 15px;padding: 13px 5px;display: flex;width: 100%;justify-content: center;cursor: pointer;border-radius: 10px;}
+.add__company:hover {background-color: var(--main-light-skyblue);color: var(--main-white);}
+
+/* 29-4-2024 */
+
+.company__profile__image img {width: 200px;height: 200px;border-radius: 10px;position: unset;}
+.company__profile__image .v-responsive.v-img {display: unset;}
+.company__profile__image .v-responsive__sizer {padding: 0 !important;}
+.bttn__danger {border-color: var(--danger);color: var(--danger);transition: all 0.5s;font-size: 16px;}
+.bttn__danger:hover {background-color: var(--danger);color: var(--main-white);}
+.bttn__info__upload {background-color: var(--main-light-skyblue);border-color: var(--main-light-skyblue);color: var(--main-white);transition: all 0.5s;font-size: 16px;}
+.bttn__info__upload:hover {background-color: transparent;border-color: var(--main-light-skyblue);color: var(--main-light-skyblue);}
+.bttn__action__info svg {font-size: 22px;}
+.company_profile_info {padding: 10px 10px 10px 20px;margin-bottom: 12px;}
+.profile__detail__form {margin-top: 15px;}

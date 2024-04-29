@@ -32,6 +32,11 @@ const MainRoutes = {
       component: () => import('@/views/pages/profile/ProfileView.vue')
     },
     {
+      name: 'Profile Edit',
+      path: '/profileedit',
+      component: () => import('@/views/pages/profile/ProfileEditForm.vue')
+    },
+    {
       name: 'User List',
       path: '/userlist',
       component: () => import('@/user/list/ListView.vue')
@@ -51,6 +56,21 @@ const MainRoutes = {
       path: '/view',
       component: () => import('@/user/view/UserDetailView.vue')
     },
+    {
+      name: 'Camera',
+      path: '/camera',
+      component: () => import('@/camera/CameraView.vue')
+    },
+    {
+      name: 'Update Password',
+      path: '/updatepassword',
+      component: () => import('@/views/pages/password/UpdatePassword.vue')
+    },
+    {
+      name: 'Company Profile',
+      path: '/companyprofile',
+      component: () =>import('@/views/pages/companyprofile/CompanyProfile.vue')
+    }
   ]
 };
 

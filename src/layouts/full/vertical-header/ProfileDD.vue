@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { LogoutIcon, UserIcon, UserCircleIcon } from 'vue-tabler-icons';
+import { LogoutIcon, UserIcon, UserCircleIcon, SettingsIcon, } from 'vue-tabler-icons';
 import { useAuthStore } from '@/stores/auth';
 
 const swt1 = ref(true);
@@ -28,7 +28,6 @@ const authStore = useAuthStore();
         <h6 class="text-subtitle-2 text-medium-emphasis mr-11 pr-11 mb-3 mt-2">70% discount for 1 years subscriptions.</h6>
         <v-btn color="warning" variant="flat" target="_" href="https://codedthemes.com/item/berry-vue-admin-dashboard/"> Go Premium </v-btn>
       </div> -->
-
       <!-- <div class="bg-lightprimary rounded-md px-5 py-3 my-3">
         <div class="d-flex align-center justify-space-between">
           <h5 class="text-h5">Start DND Mode</h5>
@@ -56,10 +55,10 @@ const authStore = useAuthStore();
 
         <v-list-item color="secondary" rounded="md">
           <template v-slot:prepend>
-            <IconDeviceCctv size="20" class="mr-2" />
+            <UserCircleIcon size="20" class="mr-2" />
           </template>
           <v-list-item-title class="text-subtitle-2">
-            <RouterLink to="/userlist">Camera</RouterLink> 
+            <RouterLink to="/camera">Camera</RouterLink> 
           </v-list-item-title>
         </v-list-item>
 
@@ -71,12 +70,30 @@ const authStore = useAuthStore();
             <RouterLink to="/profile">Account Settings</RouterLink> 
           </v-list-item-title>
         </v-list-item>
+
+        <v-list-item color="secondary" rounded="md">
+          <template v-slot:prepend>
+            <SettingsIcon size="20" class="mr-2" />
+          </template>
+          <v-list-item-title class="text-subtitle-2">
+            <RouterLink to="/companyprofile">Company Profile</RouterLink> 
+          </v-list-item-title>
+        </v-list-item>
+
+        <v-list-item color="secondary" rounded="md">
+          <template v-slot:prepend>
+            <UserCircleIcon size="20" class="mr-2" />
+          </template>
+          <v-list-item-title class="text-subtitle-2">
+            <RouterLink to="/updatepassword">Updated Password</RouterLink> 
+          </v-list-item-title>
+        </v-list-item>
         
         <v-list-item color="secondary" rounded="md">
           <template v-slot:prepend>
             <LogoutIcon size="20" class="mr-2" />
           </template>
-          <v-list-item-title class="text-subtitle-2">
+          <v-list-item-title class="text-subtitle-2" @click="authStore.logout()">
             <RouterLink to="">Logout</RouterLink> 
           </v-list-item-title>
         </v-list-item>

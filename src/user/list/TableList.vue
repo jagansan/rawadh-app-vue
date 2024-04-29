@@ -55,7 +55,7 @@
         { title: 'Name', align: 'start', key: 'name' },
         { title: 'Email', align: 'start', key: 'email' },
         { title: 'Mobile', align: 'start', key: 'number' },
-        { title: 'Active', align: 'start', key: 'active' },
+        { title: 'Status', align: 'start', key: 'active' },
         { title: 'User Type', align: 'start', key: 'usertype' },
         { title: 'Action', align: 'start', key: 'action' },
     ];
@@ -126,6 +126,6 @@
     // Define methods
     const editItem = (item: any) => {
         // Implement your edit logic here, e.g., show a dialog for editing.
-        console.log('Edit: /edit', item);
+        console.log('Edit:', item);
     };
 </script>

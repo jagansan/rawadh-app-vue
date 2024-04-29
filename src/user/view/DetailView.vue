@@ -67,7 +67,7 @@
                         <v-row>
                             <v-col cols="12" md="3">
                                 <div class="label__form">
-                                    Active <span class="col__info">:</span>
+                                    Status <span class="col__info">:</span>
                                 </div>
                             </v-col>
                             <v-col cols="12" md="9">Active</v-col>
